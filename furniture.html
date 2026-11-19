@@ -1,0 +1,195 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#f8f8f8" />
+    <meta name="description" content="Explore considered furniture and timeless pieces for every room at Common Goods." />
+    <title>Furniture | Common Goods</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css?v=15" />
+    <link rel="stylesheet" href="furniture.css" />
+    <script src="furniture.js?v=2" defer></script>
+  </head>
+  <body>
+    <div class="topbar">
+      <div class="topbar-inner">
+        <div class="topbar-locale" aria-label="Store preferences">
+          <button type="button">English <svg viewBox="0 0 12 8" aria-hidden="true"><path d="m2 2 4 4 4-4" /></svg></button>
+          <button type="button">Country <svg viewBox="0 0 12 8" aria-hidden="true"><path d="m2 2 4 4 4-4" /></svg></button>
+        </div>
+        <p class="shipping-message">FREE SHIPPING FOR ALL ORDERS OVER $150</p>
+        <div class="topbar-right">
+          <div class="topbar-social" aria-label="Social links">
+            <a href="#footer" aria-label="Facebook">f</a>
+            <a href="#footer" aria-label="X">X</a>
+            <a href="#footer" aria-label="Instagram">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5" /><circle cx="12" cy="12" r="4" /><circle cx="17.5" cy="6.5" r=".6" /></svg>
+            </a>
+            <a href="#footer" aria-label="YouTube">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M22 8.2a2.8 2.8 0 0 0-2-2c-1.8-.5-8-.5-8-.5s-6.2 0-8 .5a2.8 2.8 0 0 0-2 2A29 29 0 0 0 1.5 12 29 29 0 0 0 2 15.8a2.8 2.8 0 0 0 2 2c1.8.5 8 .5 8 .5s6.2 0 8-.5a2.8 2.8 0 0 0 2-2 29 29 0 0 0 .5-3.8 29 29 0 0 0-.5-3.8Z" /><path d="m10 15 5-3-5-3v6Z" /></svg>
+            </a>
+          </div>
+          <a class="topbar-newsletter" href="index.html#newsletter">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 5h18v14H3z" /><path d="m3 6 9 7 9-7" /></svg>
+            Newsletter
+          </a>
+          <a href="#footer">Contact us</a>
+          <a href="#footer">FAQs</a>
+        </div>
+      </div>
+    </div>
+
+    <header class="site-header">
+      <button class="icon-button mobile-menu-button" type="button" aria-label="Open menu" aria-expanded="false">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 7h18M3 12h18M3 17h18" /></svg>
+      </button>
+      <a class="wordmark" href="#" aria-label="Common Goods home">common<span>goods</span><i>®</i></a>
+      <form class="header-search-form" role="search">
+        <input type="search" placeholder="Search for products" aria-label="Search products" />
+        <select class="search-category" aria-label="Choose a product category">
+          <option value="All">Select category</option>
+          <option value="Furniture">Furniture</option>
+          <option value="Lighting">Lighting</option>
+          <option value="Accessories">Accessories</option>
+        </select>
+        <button type="submit" aria-label="Search products">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="10.8" cy="10.8" r="6.8" /><path d="m16 16 5 5" /></svg>
+        </button>
+      </form>
+
+      <div class="header-actions">
+        <a class="icon-button account-link" href="#footer" aria-label="Your account">
+          <span>Login / Register</span>
+        </a>
+        <button class="icon-button wishlist-header" type="button" aria-label="Wishlist">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20.7 8.7c0 5.2-8.7 10.1-8.7 10.1S3.3 13.9 3.3 8.7a4.5 4.5 0 0 1 8.7-1.6 4.5 4.5 0 0 1 8.7 1.6Z" /></svg>
+          <span class="header-count wishlist-count">0</span>
+        </button>
+        <button class="icon-button compare-header" type="button" aria-label="Compare">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 3v18m0 0-4-4m4 4 4-4M17 21V3m0 0-4 4m4-4 4 4" /></svg>
+          <span class="header-count">0</span>
+        </button>
+        <button class="icon-button cart-toggle" type="button" aria-label="Shopping bag">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 8h14l1 13H4L5 8Z" /><path d="M9 9V6a3 3 0 0 1 6 0v3" /></svg>
+          <span class="header-count cart-count">0</span>
+          <span class="cart-action-label"><strong class="cart-total">$0.00</strong></span>
+        </button>
+      </div>
+    </header>
+
+    <nav class="main-nav" aria-label="Main navigation">
+      <div class="nav-inner">
+        <div class="category-menu">
+          <button class="category-menu-toggle" type="button" aria-expanded="false" aria-controls="category-dropdown">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 6h18M3 12h18M3 18h18" /></svg>
+            <span>Browse Categories</span>
+            <svg class="category-chevron" viewBox="0 0 12 8" aria-hidden="true"><path d="m2 2 4 4 4-4" /></svg>
+          </button>
+          <div class="category-menu-dropdown" id="category-dropdown" aria-label="Browse categories">
+            <a href="furniture.html"><span>Furniture</span><small>33 products</small></a>
+            <a href="index.html#shop"><span>Lighting</span><small>17 products</small></a>
+            <a href="index.html#shop"><span>Accessories</span><small>12 products</small></a>
+            <a href="index.html#shop"><span>Clocks</span><small>12 products</small></a>
+            <a href="index.html#shop"><span>Cooking</span><small>12 products</small></a>
+            <a href="index.html#shop"><span>Toys</span><small>12 products</small></a>
+          </div>
+        </div>
+        <div class="nav-links">
+          <a href="index.html#shop">Discover</a>
+          <a class="nav-active" href="furniture.html">Furniture</a>
+          <a href="index.html#shop" data-category="Lighting">Lighting</a>
+          <a href="index.html#shop" data-category="Accessories">Accessories</a>
+          <a href="index.html#story">Our story</a>
+        </div>
+        <a class="nav-promo" href="index.html#shop">Find your next favourite <span>↗</span></a>
+      </div>
+    </nav>
+
+    <main class="furniture-page">
+      <section class="category-title-banner reveal-section" aria-labelledby="category-title">
+        <img class="category-title-background" src="img/ref-furniture-title.webp" alt="" aria-hidden="true" />
+        <div class="category-title-content">
+          <h1 id="category-title">Furniture</h1>
+          <nav class="category-nav" id="category-shortcuts" aria-label="Product categories">
+            <a href="index.html#shop"><img src="img/ref-cat-clock.svg" alt="" /><span><strong>Clocks</strong><small>12 products</small></span></a>
+            <a href="index.html#shop"><img src="img/ref-cat-light-bulb.svg" alt="" /><span><strong>Lighting</strong><small>17 products</small></span></a>
+            <a class="active" href="furniture.html"><img src="img/ref-cat-chair.svg" alt="" /><span><strong>Furniture</strong><small>33 products</small></span></a>
+            <a href="index.html#shop"><img src="img/ref-cat-flower.svg" alt="" /><span><strong>Accessories</strong><small>12 products</small></span></a>
+            <a href="index.html#shop"><img src="img/ref-cat-knives.svg" alt="" /><span><strong>Cooking</strong><small>12 products</small></span></a>
+            <a href="index.html#shop"><img src="img/ref-cat-rocking-horse.svg" alt="" /><span><strong>Toys</strong><small>12 products</small></span></a>
+          </nav>
+        </div>
+      </section>
+
+      <section class="furniture-shop" id="furniture-shop" aria-label="Furniture products">
+        <div class="shop-layout">
+          <aside class="shop-sidebar" id="shop-sidebar" aria-label="Product filters">
+            <div class="sidebar-heading"><h2>Filters</h2><button class="filter-close" type="button" aria-label="Close filters">&times;</button></div>
+            <section class="filter-group"><h3>Product categories</h3><ul class="filter-category-list"><li><a href="index.html#shop">Accessories <span>12</span></a></li><li><a href="index.html#shop">Clocks <span>12</span></a></li><li><a href="index.html#shop">Cooking <span>12</span></a></li><li class="current"><a href="furniture.html">Furniture <span>33</span></a></li><li><a href="index.html#shop">Lighting <span>17</span></a></li><li><a href="index.html#shop">Toys <span>12</span></a></li></ul></section>
+            <section class="filter-group"><h3>Filter by price</h3><div class="price-fields"><label><span class="sr-only">Minimum price</span><input id="min-price" type="number" min="0" placeholder="$0" /></label><span>&ndash;</span><label><span class="sr-only">Maximum price</span><input id="max-price" type="number" min="0" placeholder="$1,000" /></label></div><button class="filter-submit" id="apply-price" type="button">Filter</button><p class="price-range-label">Price: <span id="price-summary">$0 &ndash; $1,000</span></p></section>
+            <section class="filter-group"><h3>Filter by color</h3><div class="filter-options"><label><input type="checkbox" name="color" value="Beige" /><i class="color-chip beige"></i> Beige <span>5</span></label><label><input type="checkbox" name="color" value="Black" /><i class="color-chip black"></i> Black <span>11</span></label><label><input type="checkbox" name="color" value="Blue" /><i class="color-chip blue"></i> Blue <span>4</span></label><label><input type="checkbox" name="color" value="Brown" /><i class="color-chip brown"></i> Brown <span>7</span></label><label><input type="checkbox" name="color" value="Gray" /><i class="color-chip gray"></i> Gray <span>7</span></label><label><input type="checkbox" name="color" value="Green" /><i class="color-chip green"></i> Green <span>7</span></label><label><input type="checkbox" name="color" value="Red" /><i class="color-chip red"></i> Red <span>4</span></label><label><input type="checkbox" name="color" value="Yellow" /><i class="color-chip yellow"></i> Yellow <span>5</span></label></div></section>
+            <section class="filter-group"><h3>Filter by size</h3><div class="filter-options compact-options"><label><input type="checkbox" name="size" value="L" /> L <span>1</span></label><label><input type="checkbox" name="size" value="XL" /> XL <span>1</span></label><label><input type="checkbox" name="size" value="XXL" /> XXL <span>1</span></label></div></section>
+            <section class="filter-group"><h3>Filter by brand</h3><label class="brand-search"><input type="search" id="brand-search" placeholder="Find a brand" aria-label="Find a brand" /><span aria-hidden="true">&#9906;</span></label><div class="filter-options brand-options"><label><input type="checkbox" name="brand" value="Alessi" /> Alessi <span>3</span></label><label><input type="checkbox" name="brand" value="Eva Solo" /> Eva Solo <span>2</span></label><label><input type="checkbox" name="brand" value="HAY" /> HAY <span>2</span></label><label><input type="checkbox" name="brand" value="Joseph Joseph" /> Joseph Joseph <span>2</span></label><label><input type="checkbox" name="brand" value="Louis Poulsen" /> Louis Poulsen <span>1</span></label><label><input type="checkbox" name="brand" value="Magisso" /> Magisso <span>6</span></label><label><input type="checkbox" name="brand" value="PackIt" /> PackIt <span>4</span></label><label><input type="checkbox" name="brand" value="Rosenthal" /> Rosenthal <span>2</span></label><label><input type="checkbox" name="brand" value="Vitra" /> Vitra <span>9</span></label></div></section>
+            <section class="filter-group"><h3>Product status</h3><div class="filter-options compact-options"><label><input type="checkbox" id="on-sale" /> On sale</label><label><input type="checkbox" id="in-stock" /> In stock</label></div></section>
+            <section class="filter-group top-rated-group"><h3>Top rated products</h3><a class="rated-product" href="#furniture-shop"><img src="img/product-furniture-11.jpg" alt="Light wood chair" /><span><strong>Light wood consectetur</strong><small>★★★★★ &nbsp; $499.00</small></span></a><a class="rated-product" href="#furniture-shop"><img src="img/product-furniture-8.jpg" alt="Modern chair" /><span><strong>Vestibulum tempus metus</strong><small>★★★★★ &nbsp; <s>$329.00</s> $299.00</small></span></a><a class="rated-product" href="#furniture-shop"><img src="img/product-furniture-19-4.jpg" alt="Wooden magazine chair" /><span><strong>Chair with Magazine</strong><small>★★★★★ &nbsp; $249.00</small></span></a></section>
+          </aside>
+
+          <div class="shop-main">
+            <div class="promo-banner reveal-section"><img src="img/wood-furnit-cat-banner-sofa.jpg" alt="Soft neutral furniture in a sunlit room" loading="lazy" /><div class="promo-banner-copy"><p>VULUTATE DUIRA PARTURENT MIRA</p><span>Suspedise ullamcorper dis nisl ipsu habitasse nam parturent fusce.</span><a href="#product-grid">Shop now <b aria-hidden="true">&rarr;</b></a></div></div>
+            <div class="archive-topline">
+              <nav class="archive-breadcrumbs" aria-label="Breadcrumb"><a href="index.html">Home</a><span>/</span><a href="index.html#shop">Shop</a><span>/</span><span>Furniture</span></nav>
+              <p class="results-count" aria-live="polite">Showing <strong id="result-start">1</strong>&ndash;<strong id="result-end">12</strong> of <strong id="result-total">33</strong> results</p>
+            </div>
+            <div class="shop-toolbar">
+              <button class="filter-toggle" type="button" aria-expanded="false" aria-controls="shop-sidebar"><span aria-hidden="true">&#9776;</span> Show sidebar</button>
+              <div class="toolbar-controls">
+                <div class="show-count"><span>Show</span><button class="page-size-option" type="button" data-size="9">9</button><i>/</i><button class="page-size-option active" type="button" data-size="12">12</button><i>/</i><button class="page-size-option" type="button" data-size="18">18</button><i>/</i><button class="page-size-option" type="button" data-size="24">24</button></div>
+                <div class="view-mode-group" aria-label="Product grid layout"><button class="view-mode" type="button" aria-label="List view" data-view="list"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 5h3m4 0h11M3 12h3m4 0h11M3 19h3m4 0h11" /></svg></button><button class="view-mode" type="button" aria-label="Two columns" data-columns="2"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 4h8v16H3zM13 4h8v16h-8z" /></svg></button><button class="view-mode active" type="button" aria-label="Three columns" data-columns="3"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M2 4h6v16H2zM9 4h6v16H9zM16 4h6v16h-6z" /></svg></button><button class="view-mode" type="button" aria-label="Four columns" data-columns="4"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M2 4h4v16H2zM7 4h4v16H7zM12 4h4v16h-4zM17 4h5v16h-5z" /></svg></button></div>
+                <label class="sort-label"><span class="sr-only">Sort products</span><select id="sort-products"><option value="default">Default sorting</option><option value="popular">Sort by popularity</option><option value="rating">Sort by average rating</option><option value="newest">Sort by latest</option><option value="price-low">Sort by price: low to high</option><option value="price-high">Sort by price: high to low</option></select></label>
+              </div>
+            </div>
+            <div class="applied-filters" id="applied-filters" hidden></div>
+            <div class="category-product-grid" id="product-grid" aria-live="polite"></div>
+            <nav class="pagination" aria-label="Product pages"><button type="button" class="page-number active" data-page="1" aria-current="page">1</button><button type="button" class="page-number" data-page="2">2</button><button type="button" class="page-number" data-page="3">3</button><button type="button" class="page-number" data-page="4" hidden>4</button><button type="button" class="page-next" aria-label="Next page" data-page="2">&rarr;</button></nav>
+          </div>
+        </div>
+      </section>
+    </main>    <footer class="site-footer reference-footer" id="footer">
+      <div class="footer-main">
+        <section class="footer-widget footer-contact">
+          <a class="wordmark footer-wordmark" href="#" aria-label="Common Goods home">common<span>goods</span><i>®</i></a>
+          <p class="footer-description">Thoughtful things for the everyday. Good for you, a little gentler on the planet.</p>
+          <ul class="footer-contact-list">
+            <li><span class="footer-icon">A</span><span>451 Wall Street, UK, London</span></li>
+            <li><span class="footer-icon">P</span><span>Phone: (064) 332-1233</span></li>
+            <li><span class="footer-icon">F</span><span>Fax: (099) 453-1357</span></li>
+          </ul>
+          <div class="footer-social"><a href="#footer" aria-label="Facebook">f</a><a href="#footer" aria-label="Twitter">x</a><a href="#footer" aria-label="Instagram">ig</a><a href="#footer" aria-label="YouTube">yt</a></div>
+        </section>
+        <section class="footer-widget"><h3>Recent posts</h3>
+          <a class="footer-post" href="#latest-news"><img src="img/blog-grid-9.jpg.webp" alt="" /><span><strong>A companion for extra sleeping</strong><small>March 22, 2017</small></span></a>
+          <a class="footer-post" href="#latest-news"><img src="img/blog-grid-13.jpg.webp" alt="" /><span><strong>Outdoor seating collection inspiration</strong><small>March 22, 2017</small></span></a>
+        </section>
+        <section class="footer-widget"><h3>Our stores</h3><ul class="footer-links"><li><a href="#footer">New York</a></li><li><a href="#footer">London SF</a></li><li><a href="#footer">Edinburgh</a></li><li><a href="#footer">Los Angeles</a></li><li><a href="#footer">Chicago</a></li><li><a href="#footer">Las Vegas</a></li></ul></section>
+        <section class="footer-widget"><h3>Useful links</h3><ul class="footer-links"><li><a href="#footer">Privacy Policy</a></li><li><a href="#footer">Returns</a></li><li><a href="#footer">Terms &amp; Conditions</a></li><li><a href="#footer">Contact Us</a></li><li><a href="#latest-news">Latest News</a></li><li><a href="#footer">Our Sitemap</a></li></ul></section>
+      </div>
+      <div class="footer-menu"><h3>Footer menu</h3><a href="#footer">Instagram profile</a><a href="#shop">New Collection</a><a href="#shop">Woman Dress</a><a href="#footer">Contact Us</a><a href="#latest-news">Latest News</a><a href="#shop">Shop everything</a></div>
+      <div class="footer-bottom"><span>© 2025 Common Goods Studio</span><span>Made with care, wherever you are.</span></div>
+    </footer>
+
+    <button class="back-to-top" type="button" aria-label="Back to top" aria-hidden="true" tabindex="-1">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m6 14 6-6 6 6" /></svg>
+    </button>
+    <div class="drawer-backdrop" hidden></div>
+    <aside class="cart-drawer" aria-label="Shopping bag" aria-hidden="true">
+      <div class="drawer-heading"><div><span class="eyebrow">YOUR BAG</span><h2>The good stuff <span class="drawer-count">(0)</span></h2></div><button class="drawer-close" type="button" aria-label="Close shopping bag">✕</button></div>
+      <div class="cart-items"></div>
+      <div class="cart-empty"><span>✳</span><h3>Your bag is taking a breather.</h3><p>Let’s find a few good things for it.</p><button class="button button-dark continue-shopping" type="button">Keep exploring</button></div>
+      <div class="cart-summary" hidden><div class="subtotal-row"><span>Subtotal</span><strong>$0.00</strong></div><p>Shipping and any discounts are calculated at checkout.</p><button class="button button-dark checkout-button" type="button">Continue to checkout <span>↗</span></button></div>
+    </aside>
+    <div class="toast" role="status" aria-live="polite"></div>
+  </body>
+</html>

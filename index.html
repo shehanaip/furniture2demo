@@ -1,0 +1,422 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#f8f8f8" />
+    <meta
+      name="description"
+      content="Thoughtful things for the everyday. Discover considered homeware, clothing, and accessories at Common Goods."
+    />
+    <title>Common Goods — thoughtful things for the everyday</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css?v=18" />
+    <script src="app.js?v=9" defer></script>
+  </head>
+  <body class="home-page">
+    <div class="topbar">
+      <div class="topbar-inner">
+        <div class="topbar-locale" aria-label="Store preferences">
+          <button type="button">English <svg viewBox="0 0 12 8" aria-hidden="true"><path d="m2 2 4 4 4-4" /></svg></button>
+          <button type="button">Country <svg viewBox="0 0 12 8" aria-hidden="true"><path d="m2 2 4 4 4-4" /></svg></button>
+        </div>
+        <p class="shipping-message">FREE SHIPPING FOR ALL ORDERS OVER $150</p>
+        <div class="topbar-right">
+          <div class="topbar-social" aria-label="Social links">
+            <a href="#footer" aria-label="Facebook">f</a>
+            <a href="#footer" aria-label="X">X</a>
+            <a href="#footer" aria-label="Instagram">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5" /><circle cx="12" cy="12" r="4" /><circle cx="17.5" cy="6.5" r=".6" /></svg>
+            </a>
+            <a href="#footer" aria-label="YouTube">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M22 8.2a2.8 2.8 0 0 0-2-2c-1.8-.5-8-.5-8-.5s-6.2 0-8 .5a2.8 2.8 0 0 0-2 2A29 29 0 0 0 1.5 12 29 29 0 0 0 2 15.8a2.8 2.8 0 0 0 2 2c1.8.5 8 .5 8 .5s6.2 0 8-.5a2.8 2.8 0 0 0 2-2 29 29 0 0 0 .5-3.8 29 29 0 0 0-.5-3.8Z" /><path d="m10 15 5-3-5-3v6Z" /></svg>
+            </a>
+          </div>
+          <a class="topbar-newsletter" href="#newsletter">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 5h18v14H3z" /><path d="m3 6 9 7 9-7" /></svg>
+            Newsletter
+          </a>
+          <a href="#footer">Contact us</a>
+          <a href="#footer">FAQs</a>
+        </div>
+      </div>
+    </div>
+
+    <header class="site-header">
+      <button class="icon-button mobile-menu-button" type="button" aria-label="Open menu" aria-expanded="false">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 7h18M3 12h18M3 17h18" /></svg>
+      </button>
+      <a class="wordmark" href="#" aria-label="Common Goods home">common<span>goods</span><i>®</i></a>
+      <form class="header-search-form" role="search">
+        <input type="search" placeholder="Search for products" aria-label="Search products" />
+        <select class="search-category" aria-label="Choose a product category">
+          <option value="All">Select category</option>
+          <option value="Furniture">Furniture</option>
+          <option value="Lighting">Lighting</option>
+          <option value="Accessories">Accessories</option>
+        </select>
+        <button type="submit" aria-label="Search products">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="10.8" cy="10.8" r="6.8" /><path d="m16 16 5 5" /></svg>
+        </button>
+      </form>
+
+      <div class="header-actions">
+        <a class="icon-button account-link" href="#footer" aria-label="Your account">
+          <span>Login / Register</span>
+        </a>
+        <button class="icon-button wishlist-header" type="button" aria-label="Wishlist">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20.7 8.7c0 5.2-8.7 10.1-8.7 10.1S3.3 13.9 3.3 8.7a4.5 4.5 0 0 1 8.7-1.6 4.5 4.5 0 0 1 8.7 1.6Z" /></svg>
+          <span class="header-count wishlist-count">0</span>
+        </button>
+        <button class="icon-button compare-header" type="button" aria-label="Compare">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 3v18m0 0-4-4m4 4 4-4M17 21V3m0 0-4 4m4-4 4 4" /></svg>
+          <span class="header-count">0</span>
+        </button>
+        <button class="icon-button cart-toggle" type="button" aria-label="Shopping bag">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 8h14l1 13H4L5 8Z" /><path d="M9 9V6a3 3 0 0 1 6 0v3" /></svg>
+          <span class="header-count cart-count">0</span>
+          <span class="cart-action-label"><strong class="cart-total">$0.00</strong></span>
+        </button>
+      </div>
+    </header>
+
+    <nav class="main-nav" aria-label="Main navigation">
+      <div class="nav-inner">
+        <div class="category-menu">
+          <button class="category-menu-toggle" type="button" aria-expanded="false" aria-controls="category-dropdown">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 6h18M3 12h18M3 18h18" /></svg>
+            <span>Browse Categories</span>
+            <svg class="category-chevron" viewBox="0 0 12 8" aria-hidden="true"><path d="m2 2 4 4 4-4" /></svg>
+          </button>
+          <div class="category-menu-dropdown" id="category-dropdown" aria-label="Browse categories">
+            <a href="furniture.html"><span>Furniture</span><small>33 products</small></a>
+            <a href="index.html#shop"><span>Lighting</span><small>17 products</small></a>
+            <a href="index.html#shop"><span>Accessories</span><small>12 products</small></a>
+            <a href="index.html#shop"><span>Clocks</span><small>12 products</small></a>
+            <a href="index.html#shop"><span>Cooking</span><small>12 products</small></a>
+            <a href="index.html#shop"><span>Toys</span><small>12 products</small></a>
+          </div>
+        </div>
+        <div class="nav-links">
+          <a class="nav-active" href="#shop">Discover</a>
+          <a href="furniture.html" data-category="Furniture">Furniture</a>
+          <a href="#shop" data-category="Lighting">Lighting</a>
+          <a href="#shop" data-category="Accessories">Accessories</a>
+          <a href="#story">Our story</a>
+        </div>
+        <a class="nav-promo" href="#shop">Find your next favourite <span>↗</span></a>
+      </div>
+    </nav>
+
+    <main>
+      <section class="hero" aria-label="Featured furniture" aria-roledescription="carousel">
+        <aside class="hero-categories" id="browse-categories" aria-label="Browse categories">
+          <button class="hero-categories-toggle" type="button" aria-expanded="false">
+            <span>Browse Categories</span><svg viewBox="0 0 12 8" aria-hidden="true"><path d="m2 2 4 4 4-4" /></svg>
+          </button>
+          <a href="furniture.html" data-category="Furniture">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12V8a3 3 0 0 1 3-3h8a3 3 0 0 1 3 3v4M4 12h16v7H4zM6 19v2m12-2v2" /></svg>
+            <span>Furniture</span><svg class="category-item-chevron" viewBox="0 0 12 16" aria-hidden="true"><path d="m3 2 6 6-6 6" /></svg>
+          </a>
+          <a href="#shop" data-category="Accessories">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 11h14l-1 9H6l-1-9Zm2 0V8a5 5 0 0 1 10 0v3M9 5V3m6 2V3" /></svg>
+            <span>Cooking</span><svg class="category-item-chevron" viewBox="0 0 12 16" aria-hidden="true"><path d="m3 2 6 6-6 6" /></svg>
+          </a>
+          <a href="#shop" data-category="Accessories">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 10h16l-1 11H5L4 10Zm3 0V7a5 5 0 0 1 10 0v3" /></svg>
+            <span>Accessories</span><svg class="category-item-chevron" viewBox="0 0 12 16" aria-hidden="true"><path d="m3 2 6 6-6 6" /></svg>
+          </a>
+          <a href="#shop" data-category="Accessories">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m4 7 4-3 4 2 4-2 4 3-2 5-2-1v9H8v-9l-2 1-2-5Z" /></svg>
+            <span>Fashion</span><svg class="category-item-chevron" viewBox="0 0 12 16" aria-hidden="true"><path d="m3 2 6 6-6 6" /></svg>
+          </a>
+          <a href="#shop" data-category="Accessories">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9" /><path d="M12 7v5l3 2M9 2h6" /></svg>
+            <span>Clocks</span><svg class="category-item-chevron" viewBox="0 0 12 16" aria-hidden="true"><path d="m3 2 6 6-6 6" /></svg>
+          </a>
+          <a href="#shop" data-category="Lighting">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 18h6m-5 3h4m-2-20a7 7 0 0 0-4 12.7c.8.6 1 1.3 1 2.3h6c0-1 .2-1.7 1-2.3A7 7 0 0 0 12 1Z" /></svg>
+            <span>Lighting</span><svg class="category-item-chevron" viewBox="0 0 12 16" aria-hidden="true"><path d="m3 2 6 6-6 6" /></svg>
+          </a>
+          <a href="#shop" data-category="Accessories">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 8h14l-1 12H6L5 8Zm3 0V6a4 4 0 0 1 8 0v2M8 12h.01M16 12h.01" /></svg>
+            <span>Toys</span><svg class="category-item-chevron" viewBox="0 0 12 16" aria-hidden="true"><path d="m3 2 6 6-6 6" /></svg>
+          </a>
+          <a href="#shop" data-category="Accessories">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s-8-4.4-8-11a4.5 4.5 0 0 1 8-2.8A4.5 4.5 0 0 1 20 10c0 6.6-8 11-8 11Z" /><path d="m8 12 2 2 5-5" /></svg>
+            <span>Hand Made</span><svg class="category-item-chevron" viewBox="0 0 12 16" aria-hidden="true"><path d="m3 2 6 6-6 6" /></svg>
+          </a>
+          <a href="furniture.html" data-category="Furniture">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m12 3 8 4.5v9L12 21l-8-4.5v-9L12 3Z" /><path d="m4 7.5 8 4.5 8-4.5M12 12v9" /></svg>
+            <span>Minimalism</span><svg class="category-item-chevron" viewBox="0 0 12 16" aria-hidden="true"><path d="m3 2 6 6-6 6" /></svg>
+          </a>
+          <a href="#shop" data-category="Accessories">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="6" y="2" width="12" height="20" rx="2" /><path d="M10 18h4" /></svg>
+            <span>Electronics</span><svg class="category-item-chevron" viewBox="0 0 12 16" aria-hidden="true"><path d="m3 2 6 6-6 6" /></svg>
+          </a>
+          <a href="#shop" data-category="All">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 11h18l-2 8H5l-2-8Zm3 0 2-5h8l2 5M7 19v2m10-2v2M7 14h.01M17 14h.01" /></svg>
+            <span>Cars</span><svg class="category-item-chevron" viewBox="0 0 12 16" aria-hidden="true"><path d="m3 2 6 6-6 6" /></svg>
+          </a>
+        </aside>
+        <div class="hero-copy" aria-live="polite">
+          <p class="eyebrow"><span class="eyebrow-line"></span><span class="hero-eyebrow-text">Designed for everyday living</span></p>
+          <h1><span class="hero-title-line">Take a seat.</span><br /><em class="hero-title-emphasis">stay a while.</em></h1>
+          <p class="hero-description">Considered furniture and home pieces that bring a little more comfort to the everyday.</p>
+          <div class="hero-variants">
+            <img src="img/swatch-main-demo-light-slider-x2-compressed.png" alt="Four views of the ashwood rocking chair" />
+          </div>
+          <a class="hero-price" href="#shop" aria-label="Shop the featured chair, $199">$199.00</a>
+        </div>
+        <div class="hero-visual">
+          <img
+            src="img/slider-main-demo-1.jpg.webp"
+            alt="Sculptural ashwood rocking chair with a golden yellow seat"
+            fetchpriority="high"
+          />
+          <div class="hero-image-label"><span>THE EVERYDAY ICONS EDIT</span><span class="hero-slide-count">01 — 03</span></div>
+          <button class="hero-arrow hero-arrow-next" type="button" aria-label="Next featured item">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m9 18 6-6-6-6" /></svg>
+          </button>
+          <div class="hero-pagination" role="group" aria-label="Choose featured item">
+            <button type="button" class="pagination-active" aria-label="Show slide 1" aria-current="true"></button>
+            <button type="button" aria-label="Show slide 2"></button>
+            <button type="button" aria-label="Show slide 3"></button>
+            <button type="button" class="hero-autoplay-toggle" aria-label="Pause slideshow">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 6v12m6-12v12" /></svg>
+            </button>
+          </div>
+        </div>
+        <a class="hero-scroll-cue" href="#collections" aria-label="Scroll down to explore">
+          <span>Scroll to explore</span><i aria-hidden="true"><svg viewBox="0 0 24 24"><path d="m6 9 6 6 6-6" /></svg></i>
+        </a>
+      </section>
+
+      <section class="featured-categories" id="collections" aria-labelledby="collections-title">
+        <div class="featured-categories-heading">
+          <p>WoodMart Collections</p>
+          <h2 id="collections-title">Featured Categories</h2>
+          <span>WoodMart is a powerful eCommerce theme for WordPress.</span>
+        </div>
+        <div class="featured-category-grid">
+          <a href="#shop" class="featured-category-card featured-category-card--large" data-category="Furniture">
+            <span class="featured-category-image"><img src="img/slider-main-demo-2-light-opt.jpg.webp" alt="White molded chair with a soft teal seat and oak legs" loading="lazy" /></span>
+            <span class="featured-category-title">Furniture<span class="featured-category-product-count">33 products</span></span>
+          </a>
+          <a href="#shop" class="featured-category-card" data-category="Accessories">
+            <span class="featured-category-image"><img src="img/product-accessories-new-1.jpg" alt="Wooden wristwatch with a natural dial" loading="lazy" /></span>
+            <span class="featured-category-title">Clocks</span>
+          </a>
+          <a href="#shop" class="featured-category-card" data-category="Accessories">
+            <span class="featured-category-image"><img src="img/iphone-dock-1-1.jpg" alt="Walnut wireless phone charging stand" loading="lazy" /></span>
+            <span class="featured-category-title">Accessories</span>
+          </a>
+          <a href="#shop" class="featured-category-card" data-category="Lighting">
+            <span class="featured-category-image"><img src="img/lamp-new-opt-2.png.webp" alt="Sculptural lamps in softly colored finishes" loading="lazy" /></span>
+            <span class="featured-category-title">Lighting</span>
+          </a>
+          <a href="#shop" class="featured-category-card" data-category="All">
+            <span class="featured-category-image"><img src="img/product-accessories-10.jpg" alt="Hand-carved wooden figure with a lime-green accent" loading="lazy" /></span>
+            <span class="featured-category-title">Toys</span>
+          </a>
+        </div>
+      </section>
+
+      <section class="product-section" id="shop" aria-labelledby="products-title">
+        <div class="section-heading">
+          <p class="product-section-kicker">WoodMart Accessories</p>
+          <h2 id="products-title">Featured Products</h2>
+          <p class="product-section-description">Visit our shop to see amazing creations from our designers.</p>
+          <div class="filter-tabs product-tabs" role="tablist" aria-label="Product collections">
+            <button class="product-tab active" id="tab-best-sellers" type="button" role="tab" aria-selected="true" data-product-tab="Best Sellers">Best Sellers</button>
+            <button class="product-tab" id="tab-featured" type="button" role="tab" aria-selected="false" data-product-tab="Featured">Featured</button>
+            <button class="product-tab" id="tab-sales" type="button" role="tab" aria-selected="false" data-product-tab="Sales">Sales</button>
+          </div>
+        </div>
+        <div class="product-carousel">
+          <button class="product-carousel-arrow product-carousel-prev" type="button" data-tab-step="-1" aria-label="Previous product collection">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m15 5-7 7 7 7" /></svg>
+          </button>
+          <div class="product-grid" role="tabpanel" aria-labelledby="tab-best-sellers" aria-live="polite"></div>
+          <div class="empty-state" hidden>No lovely things found. Try another search.</div>
+          <button class="product-carousel-arrow product-carousel-next" type="button" data-tab-step="1" aria-label="Next product collection">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m9 5 7 7-7 7" /></svg>
+          </button>
+        </div>
+      </section>
+
+      <section class="product-landing" aria-label="Featured designer products" aria-roledescription="carousel">
+        <div class="landing-slider" aria-live="polite">
+          <article class="landing-slide is-active" data-landing-slide="0" style="--slide-accent:#ffffff; --slide-bg:#7ab532" aria-hidden="false">
+            <div class="landing-copy">
+              <p class="landing-kicker"><span></span> Product landing page</p>
+              <h2>Vitra Chair <em>– Classic Design.</em></h2>
+              <div class="landing-specs">
+                <div><span>Designer</span><strong>Charles, Ray Eames</strong></div>
+                <div><span>Materials</span><strong>Wood, leather, metal</strong></div>
+                <div><span>Client</span><strong>Woodmart, Basel</strong></div>
+              </div>
+              <div class="landing-buy"><strong>$1,999.00</strong><button class="landing-add" type="button" data-landing-add="vitra">Add to cart <span aria-hidden="true">↗</span></button></div>
+            </div>
+            <div class="landing-art"><img src="img/chair-new-shadow-opt-4.png.webp" alt="Classic lounge chair in dark leather and walnut" fetchpriority="low" /></div>
+          </article>
+          <article class="landing-slide" data-landing-slide="1" style="--slide-accent:#ffffff; --slide-bg:#7ab532" aria-hidden="true" inert>
+            <div class="landing-copy">
+              <p class="landing-kicker"><span></span> Product landing page</p>
+              <h2>Woodspot <em>–<br /> Lamp by Seletti.</em></h2>
+              <div class="landing-specs">
+                <div><span>Designer</span><strong>Ghislain Magrite</strong></div>
+                <div><span>Materials</span><strong>Wood, leather, metal</strong></div>
+                <div><span>Client</span><strong>Woodmart, Basel</strong></div>
+              </div>
+              <div class="landing-buy"><strong>$240.00</strong><button class="landing-add" type="button" data-landing-add="lamp">Add to cart <span aria-hidden="true">↗</span></button></div>
+            </div>
+            <div class="landing-art"><img src="img/lamp-new-opt-2.png.webp" alt="Colorful sculptural Woodspot table lamps" loading="lazy" /></div>
+          </article>
+          <article class="landing-slide" data-landing-slide="2" style="--slide-accent:#ffffff; --slide-bg:#7ab532" aria-hidden="true" inert>
+            <div class="landing-copy">
+              <p class="landing-kicker"><span></span> Product landing page</p>
+              <h2>Woodspot <em>–<br /> Modern Pattern.</em></h2>
+              <div class="landing-specs">
+                <div><span>Designer</span><strong>Ray Eames, Charles</strong></div>
+                <div><span>Materials</span><strong>Metal, wood, polymer</strong></div>
+                <div><span>Client</span><strong>Woodmart, Basel</strong></div>
+              </div>
+              <div class="landing-buy"><strong>$299.00</strong><button class="landing-add" type="button" data-landing-add="pattern">Add to cart <span aria-hidden="true">↗</span></button></div>
+            </div>
+            <div class="landing-art"><img src="img/slide-3-on-green-sized-opt.png.webp" alt="Geometric wood and honeycomb modern pattern furniture" loading="lazy" /></div>
+          </article>
+        </div>
+        <div class="landing-controls" role="group" aria-label="Choose a featured product">
+          <div class="landing-dots">
+            <button type="button" class="landing-dot is-active" data-landing-go="0" aria-label="Show Vitra Chair slide" aria-current="true"></button>
+            <button type="button" class="landing-dot" data-landing-go="1" aria-label="Show Woodspot lamp slide"></button>
+            <button type="button" class="landing-dot" data-landing-go="2" aria-label="Show Woodspot modern pattern slide"></button>
+          </div>
+        </div>
+      </section>
+
+      <section class="all-in-one" id="woodmart-theme" aria-labelledby="all-in-one-title">
+        <img class="all-in-one-image" src="img/main-egg-chair.jpg.webp" alt="Two hanging rattan swing chairs with dark cushions" loading="lazy" />
+        <div class="all-in-one-content">
+          <p class="all-in-one-kicker">All-in-one ecommerce solution</p>
+          <h2 id="all-in-one-title">WoodMart – WooCommerce Theme</h2>
+          <p class="all-in-one-description">WoodMart WooCommerce theme for WordPress is the only thing you need to create your perfect online store. Use it for any kind of website: business, corporate, retail, multivendors.</p>
+          <div class="all-in-one-actions">
+            <a class="all-in-one-primary" href="https://woodmart.xtemos.com/about-us-3/">Read More</a>
+            <a class="all-in-one-secondary" href="https://woodmart.xtemos.com/contact-us/">Contact us</a>
+          </div>
+        </div>
+      </section>
+
+      <section class="join-newsletter" id="newsletter" aria-labelledby="join-newsletter-title">
+        <img class="join-newsletter-image" src="img/newsletter-new.jpg.webp" alt="Wooden table surface" loading="lazy" />
+        <div class="join-newsletter-content">
+          <h2 id="join-newsletter-title">JOIN OUR NEWSLETTER NOW</h2>
+          <form class="newsletter-form join-newsletter-form">
+            <div class="join-newsletter-email">
+              <input type="email" id="email-address" placeholder="Your email address" aria-label="Your email address" required />
+              <button type="submit">Sign up</button>
+            </div>
+            <p class="join-newsletter-privacy">Will be used in accordance with our <a href="https://woodmart.xtemos.com/home/#"><strong>Privacy Policy</strong></a></p>
+          </form>
+        </div>
+      </section>
+
+      <section class="latest-news" id="latest-news" aria-labelledby="latest-news-title">
+        <header class="latest-news-heading">
+          <p class="latest-news-kicker">Furniture Guides</p>
+          <h2 id="latest-news-title">Our Latest News</h2>
+          <p>Latest trends and inspiration in interior design.</p>
+        </header>
+        <div class="news-carousel" role="region" aria-label="Latest articles">
+          <button class="news-arrow news-arrow-prev" type="button" aria-label="Previous articles"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m15 5-7 7 7 7" /></svg></button>
+          <div class="news-viewport" tabindex="0">
+            <div class="news-track">
+              <article class="news-card">
+                <div class="news-image"><img src="img/blog-grid-9.jpg.webp" alt="A contemporary sofa in front of a hand-drawn architectural mural" loading="lazy" /><time datetime="2025-07-23"><span>23</span> Jul</time></div>
+                <div class="news-card-content"><div class="news-categories"><a href="#latest-news">Design trends</a><a href="#latest-news">Furniture</a></div><h3><a href="#latest-news">Seating collection inspiration by modern</a></h3><div class="news-meta"><span>Posted by <strong>S. Rogers</strong></span><time datetime="2025-05-30">May 30, 2025</time></div><p>Ac haca ullamcorper donec ante habi tasse donec imperdiet eturpis varius per a augue magna hac. Nec hac et vestibulum duis a tinci…</p><a class="news-read-more" href="#latest-news">Continue reading</a></div>
+              </article>
+              <article class="news-card">
+                <div class="news-image"><img src="img/blog-grid-13.jpg.webp" alt="Sculptural green chairs in a colorful tiled interior" loading="lazy" /><time datetime="2017-07-23"><span>23</span> Jul</time></div>
+                <div class="news-card-content"><div class="news-categories"><a href="#latest-news">Design trends</a><a href="#latest-news">Inspiration</a></div><h3><a href="#latest-news">Creative water features and exterior</a></h3><div class="news-meta"><span>Posted by <strong>S. Rogers</strong></span><time datetime="2017-03-22">March 22, 2017</time></div><p>Adipiscing hac imperdiet id blandit varius scelerisque at sagittis libero dui dis volutpat vehicula mus sed ut. Lacinia dui rutrum…</p><a class="news-read-more" href="#latest-news">Continue reading</a></div>
+              </article>
+              <article class="news-card">
+                <div class="news-image"><img src="img/blog-grid-12.jpg.webp" alt="Outdoor dining furniture among stone garden walls" loading="lazy" /><time datetime="2017-07-23"><span>23</span> Jul</time></div>
+                <div class="news-card-content"><div class="news-categories"><a href="#latest-news">Design trends</a><a href="#latest-news">Furniture</a></div><h3><a href="#latest-news">Exterior ideas: 10 colored garden seats</a></h3><div class="news-meta"><span>Posted by <strong>S. Rogers</strong></span><time datetime="2017-11-02">November 2, 2017</time></div><p>A sed a risusat luctus esta anibh rhoncus hendrerit blandit nam rutrum sitmiad hac. Crass a vestibulum a varius adipiscing ut dign…</p><a class="news-read-more" href="#latest-news">Continue reading</a></div>
+              </article>
+              <article class="news-card">
+                <div class="news-image"><img src="img/blog-grid-7.jpg.webp" alt="A fresh green interior with patterned walls and plants" loading="lazy" /><time datetime="2025-07-23"><span>23</span> Jul</time></div>
+                <div class="news-card-content"><div class="news-categories"><a href="#latest-news">Design trends</a><a href="#latest-news">Hand made</a></div><h3><a href="#latest-news">Green interior design inspiration</a></h3><div class="news-meta"><span>Posted by <strong>S. Rogers</strong></span><time datetime="2026-06-15">June 15, 2026</time></div><p>Modern Atlanta homes impress with a harmony of light, space, and eco-materials. Each project reflects the unique character of its …</p><a class="news-read-more" href="#latest-news">Continue reading</a></div>
+              </article>
+            </div>
+          </div>
+          <button class="news-arrow news-arrow-next" type="button" aria-label="Next articles"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m9 5 7 7-7 7" /></svg></button>
+        </div>
+      </section>
+
+      <section class="brand-strip" aria-label="Featured brands">
+        <div class="brand-carousel">
+          <button class="brand-arrow brand-arrow-prev" type="button" aria-label="Previous brand"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m15 5-7 7 7 7" /></svg></button>
+          <div class="brand-viewport" tabindex="0">
+            <div class="brand-track">
+              <div class="brand-slide"><a href="https://woodmart.xtemos.com/brand/alessi/" aria-label="Alessi"><img src="img/brand-alessi.png" alt="Alessi" loading="lazy" /></a></div>
+              <div class="brand-slide"><a href="https://woodmart.xtemos.com/brand/eva-solo/" aria-label="Eva Solo"><img src="img/brand-Eva-Solo.png" alt="Eva Solo" loading="lazy" /></a></div>
+              <div class="brand-slide"><a href="https://woodmart.xtemos.com/brand/flos/" aria-label="Flos"><img src="img/brand-flos.png" alt="Flos" loading="lazy" /></a></div>
+              <div class="brand-slide"><a href="https://woodmart.xtemos.com/brand/hay/" aria-label="HAY"><img src="img/brand-hay.png" alt="HAY" loading="lazy" /></a></div>
+              <div class="brand-slide"><a href="https://woodmart.xtemos.com/brand/joseph-joseph/" aria-label="Joseph Joseph"><img src="img/brand-Joseph-Joseph.png" alt="Joseph Joseph" loading="lazy" /></a></div>
+              <div class="brand-slide"><a href="https://woodmart.xtemos.com/brand/klober/" aria-label="Klobe"><img src="img/klobe2r.png" alt="Klobe" loading="lazy" /></a></div>
+              <div class="brand-slide"><a href="https://woodmart.xtemos.com/brand/louis-poulsen/" aria-label="Louis Poulsen"><img src="img/brand-Louis-Poulsen.png.webp" alt="Louis Poulsen" loading="lazy" /></a></div>
+              <div class="brand-slide"><a href="https://woodmart.xtemos.com/brand/magisso/" aria-label="Magisso"><img src="img/brand-Magisso.png" alt="Magisso" loading="lazy" /></a></div>
+              <div class="brand-slide"><a href="https://woodmart.xtemos.com/brand/niche/" aria-label="Niche Modern"><img src="img/nichemodern.png" alt="Niche Modern" loading="lazy" /></a></div>
+              <div class="brand-slide"><a href="https://woodmart.xtemos.com/brand/packit/" aria-label="PackIt"><img src="img/brand-PackIt.png" alt="PackIt" loading="lazy" /></a></div>
+              <div class="brand-slide"><a href="https://woodmart.xtemos.com/brand/rosenthal/" aria-label="Rosenthal"><img src="img/brand-Rosenthal.png.webp" alt="Rosenthal" loading="lazy" /></a></div>
+              <div class="brand-slide"><a href="https://woodmart.xtemos.com/brand/vitra/" aria-label="Vitra"><img src="img/brand-witra.png" alt="Vitra" loading="lazy" /></a></div>
+            </div>
+          </div>
+          <button class="brand-arrow brand-arrow-next" type="button" aria-label="Next brand"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m9 5 7 7-7 7" /></svg></button>
+        </div>
+      </section>
+</main>
+
+    <footer class="site-footer reference-footer" id="footer">
+      <div class="footer-main">
+        <section class="footer-widget footer-contact">
+          <a class="wordmark footer-wordmark" href="#" aria-label="Common Goods home">common<span>goods</span><i>®</i></a>
+          <p class="footer-description">Thoughtful things for the everyday. Good for you, a little gentler on the planet.</p>
+          <ul class="footer-contact-list">
+            <li><span class="footer-icon">A</span><span>451 Wall Street, UK, London</span></li>
+            <li><span class="footer-icon">P</span><span>Phone: (064) 332-1233</span></li>
+            <li><span class="footer-icon">F</span><span>Fax: (099) 453-1357</span></li>
+          </ul>
+          <div class="footer-social"><a href="#footer" aria-label="Facebook">f</a><a href="#footer" aria-label="Twitter">x</a><a href="#footer" aria-label="Instagram">ig</a><a href="#footer" aria-label="YouTube">yt</a></div>
+        </section>
+        <section class="footer-widget"><h3>Recent posts</h3>
+          <a class="footer-post" href="#latest-news"><img src="img/blog-grid-9.jpg.webp" alt="" /><span><strong>A companion for extra sleeping</strong><small>March 22, 2017</small></span></a>
+          <a class="footer-post" href="#latest-news"><img src="img/blog-grid-13.jpg.webp" alt="" /><span><strong>Outdoor seating collection inspiration</strong><small>March 22, 2017</small></span></a>
+        </section>
+        <section class="footer-widget"><h3>Our stores</h3><ul class="footer-links"><li><a href="#footer">New York</a></li><li><a href="#footer">London SF</a></li><li><a href="#footer">Edinburgh</a></li><li><a href="#footer">Los Angeles</a></li><li><a href="#footer">Chicago</a></li><li><a href="#footer">Las Vegas</a></li></ul></section>
+        <section class="footer-widget"><h3>Useful links</h3><ul class="footer-links"><li><a href="#footer">Privacy Policy</a></li><li><a href="#footer">Returns</a></li><li><a href="#footer">Terms &amp; Conditions</a></li><li><a href="#footer">Contact Us</a></li><li><a href="#latest-news">Latest News</a></li><li><a href="#footer">Our Sitemap</a></li></ul></section>
+      </div>
+      <div class="footer-menu"><h3>Footer menu</h3><a href="#footer">Instagram profile</a><a href="#shop">New Collection</a><a href="#shop">Woman Dress</a><a href="#footer">Contact Us</a><a href="#latest-news">Latest News</a><a href="#shop">Shop everything</a></div>
+      <div class="footer-bottom"><span>© 2025 Common Goods Studio</span><span>Made with care, wherever you are.</span></div>
+    </footer>
+
+    <button class="back-to-top" type="button" aria-label="Back to top" aria-hidden="true" tabindex="-1">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m6 14 6-6 6 6" /></svg>
+    </button>
+    <div class="drawer-backdrop" hidden></div>
+    <aside class="cart-drawer" aria-label="Shopping bag" aria-hidden="true">
+      <div class="drawer-heading"><div><span class="eyebrow">YOUR BAG</span><h2>The good stuff <span class="drawer-count">(0)</span></h2></div><button class="drawer-close" type="button" aria-label="Close shopping bag">✕</button></div>
+      <div class="cart-items"></div>
+      <div class="cart-empty"><span>✳</span><h3>Your bag is taking a breather.</h3><p>Let’s find a few good things for it.</p><button class="button button-dark continue-shopping" type="button">Keep exploring</button></div>
+      <div class="cart-summary" hidden><div class="subtotal-row"><span>Subtotal</span><strong>$0.00</strong></div><p>Shipping and any discounts are calculated at checkout.</p><button class="button button-dark checkout-button" type="button">Continue to checkout <span>↗</span></button></div>
+    </aside>
+    <div class="toast" role="status" aria-live="polite"></div>
+  </body>
+</html>
